@@ -126,9 +126,9 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     image4.text((670, 332), text=title1[1], fill="white", font = font3, align ="left") 
 
     # description
-    views = f"Views : {views}"
-    duration = f"Duration : {duration} minutes"
-    channel = f"player : DarkxMusic"
+    views = f"Views » {views}"
+    duration = f"Duration » {duration} minutes"
+    channel = f"Powered By » @Prince_ariyan_143"
 
 
     
@@ -144,7 +144,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 
 
 @Client.on_message(
-    commandpro(["/play", "/yt", "/ytp"])
+    commandpro(["/play", "/yt", "play"])
     & filters.group
     & ~filters.edited
     & ~filters.forwarded
@@ -188,12 +188,12 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"**ᴘʟᴇᴀsᴇ ᴍᴀɴᴜᴀʟʟʏ ᴀᴅᴅ ᴀssɪsᴛᴀɴᴛ ᴏʀ ᴄᴏɴᴛᴀᴄᴛ [sᴜᴍɪᴛ ʏᴀᴅᴀᴠ](https://t.me/Mr_DiSasTer_XD)** ")
+                        f"**ᴘʟᴇᴀsᴇ ᴍᴀɴᴜᴀʟʟʏ ᴀᴅᴅ ᴀssɪsᴛᴀɴᴛ ᴏʀ ᴄᴏɴᴛᴀᴄᴛ [ᴀʀɪʏᴀɴ-xᴅ](https://t.me/Prince_ariyan_143)** ")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"**ᴘʟᴇᴀsᴇ ᴍᴀɴᴜᴀʟʟʏ ᴀᴅᴅ ᴀssɪsᴛᴀɴᴛ ᴏʀ ᴄᴏɴᴛᴀᴄᴛ [sᴜᴍɪᴛ ʏᴀᴅᴀᴠ](https://t.me/Mr_DiSasTer_XD)*")
+            f"**ᴘʟᴇᴀsᴇ ᴍᴀɴᴜᴀʟʟʏ ᴀᴅᴅ ᴀssɪsᴛᴀɴᴛ ᴏʀ ᴄᴏɴᴛᴀᴄᴛ [ᴀʀɪʏᴀɴ-xᴅ](https://t.me/Prince_ariyan_143)*")
         return
     
     audio = (
@@ -219,8 +219,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
              [
             [
-                InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/TechQuardSupport"),
-                InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/TechQuard"),
+                InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/ariyan_discus"),
+                InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/ariyan_server"),
             ],
             [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="close_play")
             ]
@@ -258,8 +258,8 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
              [
             [
-                InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/TechQuardSupport"),
-                InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/TechQuard"),
+                InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/ariyan_discus"),
+                InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/ariyan_server"),
             ],
             [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="close_play")
             ]
@@ -274,8 +274,8 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
              [
             [
-                InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/TechQuardSupport"),
-                InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/TechQuard"),
+                InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/ariyan_discus"),
+                InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/ariyan_server"),
             ],
             [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="close_play")
             ]
@@ -293,7 +293,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             await message.reply_photo(
-                     photo=f"https://te.legra.ph/file/71bdd6e8c353398a4034a.jpg",
+                     photo=f"https://te.legra.ph/file/1aca448d82046ee746134.jpg",
                      caption="💌 **ᴜsᴀɢᴇ: /play ɢɪᴠᴇ ᴀ ᴛɪᴛʟᴇ sᴏɴɢ ᴛᴏ ᴘʟᴀʏ ᴍᴜsɪᴄ**"
                     
             )
@@ -330,8 +330,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
              [
             [
-                InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/TechQuardSupport"),
-                InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/TechQuard"),
+                InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/ariyan_discus"),
+                InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/ariyan_server"),
             ],
             [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="close_play")
             ]
@@ -441,7 +441,7 @@ async def stop(_, message: Message):
     )
 
 
-@Client.on_message(commandpro(["/reload", "/refresh"]))
+@Client.on_message(commandpro(["/reload", "/refresh", "reload"]))
 @errors
 @authorized_users_only
 async def admincache(client, message: Message):

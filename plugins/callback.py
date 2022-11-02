@@ -64,8 +64,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("🏡 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/ariyan_server")
         ],
         [
-            InlineKeyboardButton("🔷 ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_cmd"),
-            InlineKeyboardButton("❄️ ᴍᴏʀᴇ ɪɴғᴏ", callback_data="more_info")
+            InlineKeyboardButton("🔥 ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs 🔥", callback_data="help_cmd"),
         ]
    
      ]

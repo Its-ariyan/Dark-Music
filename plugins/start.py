@@ -103,17 +103,22 @@ async def ping_pong(client: Client, message: Message):
     start = time()
     sumit = await message.reply_photo(
         random.choice(DARK_IMG),
-        caption="𝗣 𝗢 𝗡 𝗚 🎉 !! \n `{delta_ping * 1000:.3f} ᴍs`""",
+        caption="ᴩɪɴɢɪɴɢ...",
+    )
+    await sumit.edit_text(
+        f"""𝗣 𝗢 𝗡 𝗚 🎉 !! \n `{delta_ping * 1000:.3f} ᴍs`""",
     reply_markup=InlineKeyboardMarkup(
              [
             [
-                InlineKeyboardButton(text="🥀 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/ariyan_discus"),
-                InlineKeyboardButton(text="🏡 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/ariyan_server"),
+                InlineKeyboardButton(text="🛟 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/TheSupportBots"),
+                InlineKeyboardButton(text="🎃 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/TechQuard"),
             ],
             [
-                InlineKeyboardButton(text="🔐 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Prince_ariyan_143"),
+                InlineKeyboardButton(text="🔐 ʏᴏᴜᴛᴜʙᴇ", url=f"https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw"),
+                InlineKeyboardButton(text="🎓 ᴅᴇᴠᴇᴏᴘᴇʀ", url=f"https://t.me/Prince_ariyan_143"),
             ]
         ]
      ),
   ) 
+
 

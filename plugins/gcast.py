@@ -1,10 +1,10 @@
-# Sumit Yadav // @Simple_Mundaa
+# Prince_ariyan_143 // @Prince_ariyan_143
 
 import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import Dialog, Chat, Message
 from pyrogram.errors import UserAlreadyParticipant
-from modules.clientbot.clientbot import client as aditya
+from modules.clientbot.clientbot import client as ariyan
 from modules.config import SUDO_USERS
 
 @Client.on_message(filters.command(["gcast", "post", "send"]))
@@ -23,7 +23,7 @@ async def broadcast(_, message: Message):
             try:
                 await aditya.send_message(dialog.chat.id, lmao)
                 sent = sent+1
-                await wtf.edit(f"`sᴜᴍɪᴛ sɪʀ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ` \n\n**sᴇɴᴛ ᴛᴏ:** `{sent}` ᴄʜᴀᴛs \n**ғᴀɪʟᴇᴅ ɪɴ:** {failed} ᴄʜᴀᴛs")
+                await wtf.edit(f"`sɪʀ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ` \n\n**sᴇɴᴛ ᴛᴏ:** `{sent}` ᴄʜᴀᴛs \n**ғᴀɪʟᴇᴅ ɪɴ:** {failed} ᴄʜᴀᴛs")
                 await asyncio.sleep(3)
             except:
                 failed=failed+1

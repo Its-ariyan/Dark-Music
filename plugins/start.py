@@ -60,7 +60,7 @@ async def start_(client: Client, message: Message):
     await message.reply_photo(
         random.choice(DARK_IMG),
         caption=f"""**━━━━━━━━━━━━━━━━━
-ʜᴇʟʟᴏ, ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴀɴᴅ ɴᴇxᴛ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴠᴄ ᴘʟᴀʏᴇʀ
+ʜᴇʟʟᴏ {}, 🥀 ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴀɴᴅ ɴᴇxᴛ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴠᴄ ᴘʟᴀʏᴇʀ
 ʙᴏᴛ ᴀɴᴅ ɴᴏ ʟᴀɢ ɪssᴜᴇ ᴡɪᴛʜ ʙᴇsᴛ sᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs
 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
 ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ [ᴀʀɪʏᴀɴ-xᴅ](https://t.me/Prince_ariyan_143)...
@@ -75,8 +75,7 @@ async def start_(client: Client, message: Message):
             InlineKeyboardButton("🏡 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/ariyan_server")
         ],
         [
-            InlineKeyboardButton("🔷 ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_cmd"),
-            InlineKeyboardButton("❄️ ᴍᴏʀᴇ ɪɴғᴏ", callback_data="more_info")
+            InlineKeyboardButton("🔥 ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs 🔥", callback_data="help_cmd"),
         ]
    
      ]

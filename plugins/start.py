@@ -103,10 +103,7 @@ async def ping_pong(client: Client, message: Message):
     start = time()
     sumit = await message.reply_photo(
         random.choice(DARK_IMG),
-        caption="ᴩɪɴɢɪɴɢ...",
-    )
-    await sumit.edit_text(
-        f"""𝗣 𝗢 𝗡 𝗚 🎉 !! \n `{delta_ping * 1000:.3f} ᴍs`""",
+        caption="𝗣 𝗢 𝗡 𝗚 🎉 !! \n `{delta_ping * 1000:.3f} ᴍs`""",
     reply_markup=InlineKeyboardMarkup(
              [
             [

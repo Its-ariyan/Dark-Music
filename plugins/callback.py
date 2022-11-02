@@ -10,11 +10,10 @@ HOME_TEXT = """
 ʜᴇʟʟᴏ {}, 🥀
 ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ɴᴇxᴛ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ᴀɴᴅ ɴᴏ ʟᴀɢ ɪssᴜᴇ ᴡɪᴛʜ ʙᴇsᴛ sᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs
 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
-ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ [ᴀʀɪʏᴀɴ-xᴅ](https://t.me/Mr_DiSasTer_XD)...
+ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ [ᴀʀɪʏᴀɴ-xᴅ](https://t.me/Prince_ariyan_143)...
 ━━━━━━━━━━━━━━━━━━━**"""
 
-SUDO_CMD = """
-🌾 **sᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅs :**
+SUDO_USERS = """🥀 sᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅs 
 ๏ /gcast : ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
 ๏ /eval or /sh : ʀᴜɴs ᴛʜᴇ ɢɪᴠᴇɴ ᴄᴏᴅᴇ ᴏɴ ᴛʜᴇ ʙᴏᴛ's ᴛᴇʀᴍɪɴᴀʟ.
 ๏ /rmw : ᴄʟᴇᴀʀs ᴀʟʟ ᴛʜᴇ ᴄᴀᴄʜᴇ ᴩʜᴏᴛᴏs ᴏɴ ᴛʜᴇ ʙᴏᴛ's sᴇʀᴠᴇʀ.
@@ -84,7 +83,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
                 [
                     InlineKeyboardButton(
-                        "🥀 sᴜᴅᴏ ᴄᴍᴅ ", callback_data="sudo_cmd"),
+                        "🥀 sᴜᴅᴏ ᴄᴍᴅ ", callback_data="sudo_users"),
                     InlineKeyboardButton(
                         "🍃 ᴜsᴇʀs ᴄᴍᴅ", callback_data="users_cmd"),
                 ],
@@ -113,7 +112,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons =  [
                 [
                     InlineKeyboardButton(
-                        "🔗 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/ariyan_server"),
+                        "🔗 sᴏᴜʀᴄᴇ", url=f"https://github.com/Prince-ariyan-143/DarkxMusicV2"),
                     InlineKeyboardButton(
                         "💌 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/ariyan_discus")
                 ],

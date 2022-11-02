@@ -118,9 +118,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "😍 ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ", url="https://t.me/ariyanXmusic_bot"),
-                    InlineKeyboardButton(
-                        "🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Prince_ariyan_143")
+                        "😍 ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ", url="https://t.me/ariyanXmusic_bot")
                 ],
                 [
                     InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home")

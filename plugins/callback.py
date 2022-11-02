@@ -10,7 +10,7 @@ HOME_TEXT = """
 ʜᴇʟʟᴏ [{}](tg://user?id={})
 ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ɴᴇxᴛ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ᴀɴᴅ ɴᴏ ʟᴀɢ ɪssᴜᴇ ᴡɪᴛʜ ʙᴇsᴛ sᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs
 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
-ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ [sᴜᴍɪᴛ ʏᴀᴅᴀᴠ](https://t.me/Mr_DiSasTer_XD)...
+ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ [ᴀʀɪʏᴀɴ-xᴅ](https://t.me/Mr_DiSasTer_XD)...
 ━━━━━━━━━━━━━━━━━━━**"""
 
 SUDO_CMD = """
@@ -60,12 +60,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-            InlineKeyboardButton("🛟 sᴜᴘᴘᴏʀᴛ", url="https://t.me/TheSupportBots"),
-            InlineKeyboardButton("🌾 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TechQuard")
+            InlineKeyboardButton("🥀 sᴜᴘᴘᴏʀᴛ", url="https://t.me/ariyan_discus"),
+            InlineKeyboardButton("🏡 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/ariyan_server")
         ],
         [
-            InlineKeyboardButton("🧰 ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_cmd"),
-            InlineKeyboardButton("🎃 ᴍᴏʀᴇ ɪɴғᴏ", callback_data="more_info")
+            InlineKeyboardButton("🔷 ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_cmd"),
+            InlineKeyboardButton("❄️ ᴍᴏʀᴇ ɪɴғᴏ", callback_data="more_info")
         ]
    
      ]
@@ -85,15 +85,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
                 [
                     InlineKeyboardButton(
-                        "🌾 sᴜᴅᴏ ᴄᴍᴅ ", callback_data="sudo_users"),
+                        "🥀 sᴜᴅᴏ ᴄᴍᴅ ", callback_data="sudo_users"),
                     InlineKeyboardButton(
                         "🍃 ᴜsᴇʀs ᴄᴍᴅ", callback_data="users_cmd"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🎓 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url="https://t.me/Mr_Disaster_Xd"),
+                        "🎓 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url="https://t.me/Prince_ariyan_143"),
                     InlineKeyboardButton(
-                        "🍀 ᴍᴏʀᴇ ɪɴғᴏ", callback_data="more_info")
+                        "❄️ ᴍᴏʀᴇ ɪɴғᴏ", callback_data="more_info")
                 ],
                 [
                     InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home")
@@ -114,15 +114,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons =  [
                 [
                     InlineKeyboardButton(
-                        "🔗 ɢɪᴛʜᴜʙ", url=f"https://github.com/Sumit9969/DarkxMusic"),
+                        "🔗 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/ariyan_server"),
                     InlineKeyboardButton(
-                        "💌 ʏᴏᴜᴛᴜʙᴇ", url=f"https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw")
+                        "💌 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/ariyan_discus")
                 ],
                 [
                     InlineKeyboardButton(
-                        "👾 ʙᴏᴛ ʟɪsᴛs", url="https://t.me/TechQuardBot"),
+                        "😍 ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ", url="https://t.me/ariyanXmusic"),
                     InlineKeyboardButton(
-                        "🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Mr_DiSasTer_XD")
+                        "🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Prince_ariyan_143")
                 ],
                 [
                     InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home")

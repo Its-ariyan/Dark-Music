@@ -85,7 +85,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
                 [
                     InlineKeyboardButton(
-                        "🥀 sᴜᴅᴏ ᴄᴍᴅ ", callback_data="sudo_users"),
+                        "🥀 sᴜᴅᴏ ᴄᴍᴅ ", callback_data="sudo_cmd"),
                     InlineKeyboardButton(
                         "🍃 ᴜsᴇʀs ᴄᴍᴅ", callback_data="users_cmd"),
                 ],
@@ -120,7 +120,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "😍 ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ", url="https://t.me/ariyanXmusic"),
+                        "😍 ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ", url="https://t.me/ariyanXmusic_bot"),
                     InlineKeyboardButton(
                         "🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Prince_ariyan_143")
                 ],

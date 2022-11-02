@@ -89,7 +89,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🎓 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url="https://t.me/Prince_ariyan_143"),
+                        "🏡 ʙᴏᴛ ᴏᴡɴᴇʀ", url="https://t.me/{OWNER_USERNAME}"),
                     InlineKeyboardButton(
                         "❄️ ᴍᴏʀᴇ ɪɴғᴏ", callback_data="more_info")
                 ],
@@ -112,13 +112,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons =  [
                 [
                     InlineKeyboardButton(
-                        "🔗 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url=f"https://github.com/Prince-ariyan-143/DarkxMusicV2"),
+                        "🔗 sᴏᴜʀᴄᴇ", url=f"https://github.com/Prince-ariyan-143/DarkxMusicV2"),
                     InlineKeyboardButton(
                         "💌 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/ariyan_discus")
                 ],
                 [
                     InlineKeyboardButton(
                         "😍 ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ", url="https://t.me/ariyanXmusic_bot"),
+                    InlineKeyboardButton(
+                        "🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Prince_ariyan_143")
                 ],
                 [
                     InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home")

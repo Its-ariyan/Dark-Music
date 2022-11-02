@@ -111,8 +111,8 @@ async def ping_pong(client: Client, message: Message):
     reply_markup=InlineKeyboardMarkup(
              [
             [
-                InlineKeyboardButton(text="🥀 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/TheSupportBots"),
-                InlineKeyboardButton(text="🏡 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/TechQuard"),
+                InlineKeyboardButton(text="🥀 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/ariyan_discus"),
+                InlineKeyboardButton(text="🏡 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/ariyan_server"),
             ],
             [
                 InlineKeyboardButton(text="🔐 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Prince_ariyan_143"),

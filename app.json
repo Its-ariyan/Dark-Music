@@ -13,6 +13,10 @@
         "API_HASH": {
             "description": "𝚈𝚘𝚞𝚛 𝙰𝚙𝚙 𝙷𝚊𝚜𝚑",
             "required": true
+        },
+        "OWNER_USERNAME": {
+            "description": "𝚈𝚘𝚞𝚛 𝙰𝚙𝚙 𝙷𝚊𝚜𝚑",
+            "required": true
        },
         "BOT_USERNAME": {
             "description": "𝙵𝚒𝚕𝚕 𝚠𝚒𝚝𝚑 𝚢𝚘𝚞𝚛 𝚋𝚘𝚝 𝚞𝚜𝚎𝚛𝚗𝚊𝚖𝚎 𝚏𝚛𝚘𝚖 @BotFather 𝚋𝚞𝚝 𝚠𝚒𝚝𝚑𝚘𝚞𝚝 𝚞𝚜𝚒𝚗𝚐 '@' 𝚜𝚢𝚖𝚋𝚘𝚕",
@@ -27,7 +31,7 @@
             "required": true
         },
         "STRING_SESSION": {
-            "description": "𝙿𝚢𝚛𝚘𝚐𝚛𝚊𝚖 𝚂𝚝𝚛𝚒𝚗𝚐 𝚂𝚎𝚜𝚜𝚒𝚘𝚗: 𝚄𝚜𝚎 𝚃𝚑𝚎𝚜𝚎 𝙱𝚘𝚝 @Hana_Session_Bot",
+            "description": "𝙿𝚢𝚛𝚘𝚐𝚛𝚊𝚖 𝚂𝚝𝚛𝚒𝚗𝚐 𝚂𝚎𝚜𝚜𝚒𝚘𝚗: 𝚄𝚜𝚎 𝚃𝚑𝚎𝚜𝚎 𝙱𝚘𝚝 @STRINGSESSIONXBOT",
             "required": true
         }
     },

@@ -64,7 +64,7 @@ async def start_(client: Client, message: Message):
 ʙᴏᴛ ᴀɴᴅ ɴᴏ ʟᴀɢ ɪssᴜᴇ ᴡɪᴛʜ ʙᴇsᴛ sᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs
 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
 ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ [ᴀʀɪʏᴀɴ-xᴅ](https://t.me/Prince_ariyan_143)...
-━━━━━━━━━━━━━━━━━━━**""",
+━━━━━━━━━━━━━━━━━━━. """,
     reply_markup=InlineKeyboardMarkup(
     [
         [
@@ -110,12 +110,11 @@ async def ping_pong(client: Client, message: Message):
     reply_markup=InlineKeyboardMarkup(
              [
             [
-                InlineKeyboardButton(text="🛟 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/TheSupportBots"),
-                InlineKeyboardButton(text="🎃 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/TechQuard"),
+                InlineKeyboardButton(text="🛟 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/ariyan_discus"),
+                InlineKeyboardButton(text="🎉 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/ariyan_server"),
             ],
             [
-                InlineKeyboardButton(text="🔐 ʏᴏᴜᴛᴜʙᴇ", url=f"https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw"),
-                InlineKeyboardButton(text="🎓 ᴅᴇᴠᴇᴏᴘᴇʀ", url=f"https://t.me/Prince_ariyan_143"),
+                InlineKeyboardButton(text="🔐 ᴅᴇᴠᴇᴏᴘᴇʀ", url=f"https://t.me/Prince_ariyan_143"),
             ]
         ]
      ),

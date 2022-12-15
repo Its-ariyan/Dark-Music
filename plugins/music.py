@@ -128,7 +128,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     # description
     views = f"Views » {views}"
     duration = f"Duration » {duration} minutes"
-    channel = f"Powered By » @Prince_ariyan_143"
+    channel = f"Channel » {channel}"
 
 
     
@@ -188,7 +188,7 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"**ᴘʟᴇᴀsᴇ ᴍᴀɴᴜᴀʟʟʏ ᴀᴅᴅ ᴀssɪsᴛᴀɴᴛ ᴏʀ ᴄᴏɴᴛᴀᴄᴛ [ɪᴛs-ᴀʀɪʏᴀɴ](https://t.me/Prince_ariyan_143)** ")
+                        f"**ᴘʟᴇᴀsᴇ ᴍᴀɴᴜᴀʟʟʏ ᴀᴅᴅ ᴀssɪsᴛᴀɴᴛ ᴏʀ ᴄᴏɴᴛᴀᴄᴛ [ɪᴛs-ᴀʀɪʏᴀɴ](https://t.me/Prince_ariyan_143)**")
     try:
         await USER.get_chat(chid)
     except:
@@ -222,7 +222,7 @@ async def play(_, message: Message):
                 InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/ariyan_discus"),
                 InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/ariyan_server"),
             ],
-            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="skip")
+            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="close_play")
             ]
         ]
     )
@@ -261,7 +261,7 @@ async def play(_, message: Message):
                 InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/ariyan_discus"),
                 InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/ariyan_server"),
             ],
-            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="skip")
+            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="close_play")
             ]
         ]
     )
@@ -277,7 +277,7 @@ async def play(_, message: Message):
                 InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/ariyan_discus"),
                 InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/ariyan_server"),
             ],
-            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="skip")
+            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="close_play")
             ]
         ]
     )
@@ -333,7 +333,7 @@ async def play(_, message: Message):
                 InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/ariyan_discus"),
                 InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/ariyan_server"),
             ],
-            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="skip")
+            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="close_play")
             ]
         ]
     )

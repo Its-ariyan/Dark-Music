@@ -114,7 +114,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="more_info":
         buttons =  [
                 [
-                    InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home")
+                    InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="help_cmd")
                 ]
            ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -146,7 +146,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="sudo_info":
         buttons =  [
                 [
-                    InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home")
+                    InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="help_cmd")
                 ]
            ]
         reply_markup = InlineKeyboardMarkup(buttons)

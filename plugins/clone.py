@@ -7,7 +7,23 @@ from pyrogram.types import *
 from random import choice
 from modules import cloner, ASSUSERNAME, BOT_NAME
 from modules.config import API_ID, API_HASH
-IMG = ["https://telegra.ph/file/cefd3211a5acdcd332415.jpg", "https://telegra.ph/file/30d743cea510c563af6e3.jpg", "https://telegra.ph/file/f7ae22a1491f530c05279.jpg", "https://telegra.ph/file/2f1c9c98452ae9a958f7d.jpg"]
+IMG = [
+"https://te.legra.ph/file/60cd65b55a610aa57e3b6.jpg",
+"https://te.legra.ph/file/5498ed073fcc4156480a5.jpg",
+"https://te.legra.ph/file/c003017593aae380ed432.jpg",
+"https://te.legra.ph/file/399981d0856d9d7a2ba7a.jpg",
+"https://te.legra.ph/file/b1e8ba9ff892c8c71ab09.jpg",
+"https://te.legra.ph/file/4d6cd1ef3d31de04bf63a.jpg",
+"https://te.legra.ph/file/1087e8089a24ad301ea15.jpg",
+"https://te.legra.ph/file/96c8384b61560f9ce38bb.jpg",
+"https://te.legra.ph/file/e95bf98f6f650de9a307e.jpg",
+"https://te.legra.ph/file/96dbf8412fe55751e9352.jpg",
+"https://te.legra.ph/file/9533b87d747455d38a2e3.jpg",
+"https://te.legra.ph/file/ce6decb1d20284e22b43c.jpg"
+"https://te.legra.ph/file/db24a115ce2864b131d40.jpg",
+"https://te.legra.ph/file/1aca448d82046ee746134.jpg",
+]
+
 MESSAGE = "Heya! I'm a music bot hoster/Cloner\n\nI can Host Your Bot On My Server within seconds\n\nTry /clone Token from @botfather"
 
 @cloner.on_message(filters.private & filters.command("start"))

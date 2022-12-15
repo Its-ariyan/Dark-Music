@@ -29,8 +29,7 @@ DARK_IMG = (
 
 )
 
-PM_HOME = """
-ʜᴇʟʟᴏ {},
+PM_HOME = """**ʜᴇʟʟᴏ {},
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ✘ **ɪ'ᴍ ᴀ ꜱɪᴍᴘʟᴇ ᴛᴇʟᴇɢʀᴀᴍ ᴘᴏᴡᴇʀғᴜʟ ᴍᴜꜱɪᴄ ʙᴏᴛ**.
 ‣ **ɪ ᴄᴀɴ ᴘʟᴀʏ ꜱᴏɴɢꜱ ɪɴ ʏᴏᴜʀ ᴠᴏɪᴄᴇ**.
@@ -38,8 +37,7 @@ PM_HOME = """
 ‣ **ᴛʜɪꜱ ʙᴏᴛ ʙᴀꜱᴇᴅ ᴏɴ ᴛᴇʟᴇᴛʜᴏɴ. ꜱᴏ ɪᴛ'ꜱ ᴘʀᴏᴠɪᴅᴇ ᴍᴏʀᴇ ꜱᴛᴀʙɪʟɪᴛʏ ꜰʀᴏᴍ ᴏᴛʜᴇʀ ʙᴏᴛꜱ**!
 ‣ **ɪ ᴄᴀɴ ᴅᴏ ᴏᴛʜᴇʀ ᴛʜɪɴɢꜱ ʟɪᴋᴇ ᴘɪɴꜱ ᴇᴛᴄꜱ**.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-✘ **ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ 🔘 ꜰᴏʀ ᴍᴏʀᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ℹ️**.
-"""
+✘ **ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ 🔘 ꜰᴏʀ ᴍᴏʀᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ℹ️**"""
 
 
 START_TIME = datetime.utcnow()
@@ -69,7 +67,7 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         random.choice(DARK_IMG),
-        caption=(f"{HELP_TEXT}"),
+        caption=(f"{PM_HOME}"),
     reply_markup=InlineKeyboardMarkup(
     [
         [

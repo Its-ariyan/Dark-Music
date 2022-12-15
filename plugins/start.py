@@ -96,7 +96,9 @@ async def start(client: Client, message: Message):
             [
                 InlineKeyboardButton(text="🥀 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/ariyan_discus"),
                 InlineKeyboardButton(text="🏡 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/ariyan_server"),
-            ]
+            ],
+            [
+                InlineKeyboardButton(text=" ᴄʟᴏsᴇ 📌", url=f"https://t.me/ariyan_discus"),
         ]
      ),
   ) 

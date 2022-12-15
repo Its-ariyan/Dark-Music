@@ -31,14 +31,14 @@ sᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅs
 
 
 MORE_TEXT = """
-ʜᴇʏ,
+ʜᴇʏ {},
  ᴛʜɪs ɪs ˹sᴀɴᴋɪ ᴍᴜsɪᴄ˼ 🫧,
 ᴀɴ ᴏᴩᴇɴ sᴏᴜʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴜsɪᴄ ʙᴏᴛ.
 
-ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : [ɢɪᴛʜᴜʙ](https://github.com/Its-ariyan/Dark-Music).
+ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : [ɢɪᴛʜᴜʙ](https://github.com/Its-ariyan/Dark-Music)
 
 ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ ɢɪᴠᴇ ᴀ sᴛᴀʀ ᴛᴏ ᴛʜᴇ ʀᴇᴘᴏsɪᴛᴏʀʏ... ✨
-ʀᴇᴘᴏʀᴛ ʙᴜɢs ᴀᴛ [sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ](https://t.me/ariyan_discus).
+ʀᴇᴘᴏʀᴛ ʙᴜɢs ᴀᴛ [sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ](https://t.me/ariyan_discus)
 """
 
 USERS_CMD = """ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ɪɴ ᴍᴜsɪᴄ ʙᴏᴛ :

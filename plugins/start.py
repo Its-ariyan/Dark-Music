@@ -101,26 +101,40 @@ async def start(client: Client, message: Message):
      ),
   ) 
 
-@Client.on_message(command(["ping"]) & ~filters.edited)
-async def ping_pong(client: Client, message: Message):
-    start = time()
-    sumit = await message.reply_photo(
-        random.choice(DARK_IMG),
-        caption="ᴩɪɴɢɪɴɢ...",
+@Client.on_message(command(["ping", "repo", "ariyan", "alive"]) & filters.group & ~filters.edited & ~filters.private)
+
+async def help(client: Client, message: Message):
+    await message.delete()
+    boottime = time.time()
+    bot_uptime = escape_markdown(get_readable_time((time.time() - StartTime)))
+    cpu = psutil.cpu_percent(interval=0.5)
+    mem = psutil.virtual_memory().percent
+    disk = psutil.disk_usage("/").percent
+    start = datetime.now()
+    end = datetime.now()
+    resp = (end - start).microseconds / 1000
+    await message.reply_sticker("CAACAgQAAxkBAAICpGNPxPHPdw3hyH_5Rc1yGAGPH9htAAKOCQACpZdxUYvHGycIZ7mtKgQ")
+    jay = await message.reply_photo(
+        photo=f"{PING_IMG}",
+        caption=" Pinging...⚡ ",
     )
-    await sumit.edit_text(
-        f"""𝗣 𝗢 𝗡 𝗚 🎉 !! \n `{delta_ping * 1000:.3f} ᴍs`""",
-    reply_markup=InlineKeyboardMarkup(
-             [
+    await jay.edit_text(
+        f"""<b> ᴘᴏɴɢ ᴘɪɴɢ ! ⚡</b>\n  🏓 `{resp} ms`\n\n<b><u>{BOT_NAME} sʏsᴛᴇᴍ sᴛsᴛs :</u></b>\n\n✨ ᴜᴘᴛɪᴍᴇ : {bot_uptime}\n🔮 ᴄᴘᴜ : {cpu}%\n💫 ᴅɪsᴋ : {disk}%\n❤️ ʀᴀᴍ : {mem}\n\n||ᴍᴀᴅᴇ 🖤 ʙʏ [ᴘʀɪɴᴄᴇ ᴀʀɪʏᴀɴ](https://t.me/Prince_ariyan_143)||""",
+        reply_markup=InlineKeyboardMarkup(
             [
-                InlineKeyboardButton(text="🛟 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/ariyan_discus"),
-                InlineKeyboardButton(text="🎉 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/ariyan_server"),
-            ],
-            [
-                InlineKeyboardButton(text="🔐 ᴅᴇᴠᴇᴏᴘᴇʀ", url=f"https://t.me/Prince_ariyan_143"),
+                [
+                    InlineKeyboardButton(
+                        "📨 sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_GROUP}"
+                    ),
+                    InlineKeyboardButton(
+                        "📨 ᴜᴘᴅᴀᴛᴇ ", url=f"https://t.me/{CHANNEL_UPDATES}"
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "🔎 ʙᴏᴛ ʀᴇᴘᴏ ", url="https://github.com/Prince-ariyan-143/DarkxMusic"
+                    )
+                ]
             ]
-        ]
-     ),
-  ) 
-
-
+        ),
+    )

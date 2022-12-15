@@ -8,4 +8,4 @@ RUN npm i -g npm
 COPY . /sumit/
 WORKDIR /sumit/
 RUN pip3 install -U -r Installer
-CMD python3 -m modules
+CMD bash start

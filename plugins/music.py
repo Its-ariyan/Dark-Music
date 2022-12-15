@@ -153,6 +153,14 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 async def play(_, message: Message):
     global que
     global useer
+    
+    lel = await message.reply("**🔎 sᴇᴀʀᴄʜɪɴɢ...**")
+   
+    bsdk = message.from_user.mention
+
+async def play(_, message: Message):
+    global que
+    global useer
    
     bsdk = message.from_user.mention
 

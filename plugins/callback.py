@@ -108,33 +108,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
 
 
-    elif query.data=="more_info":
-        buttons =  [
-                [
-                    InlineKeyboardButton(
-                        "🔗 sᴏᴜʀᴄᴇ", url=f"https://github.com/Prince-ariyan-143/DarkxMusicV2"),
-                    InlineKeyboardButton(
-                        "💌 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/ariyan_discus")
-                ],
-                [
-                    InlineKeyboardButton(
-                        "😍 ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ", url="https://t.me/SankiXmusicBot")
-                ],
-                [
-                    InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home")
-                ]
-           ]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        try:
-            await query.edit_message_text(
-                MORE_TEXT.format(query.from_user.first_name, query.from_user.id),
-                reply_markup=reply_markup
-            )
-        except MessageNotModified:
-            pass  
-
-
-
     elif query.data=="users_cmd":
         buttons =  [              
                 [

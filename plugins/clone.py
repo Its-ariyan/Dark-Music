@@ -32,6 +32,6 @@ async def on_clone(self, message):
                 'token': bot_token,
                 'username': bot.username
             }
-            await msg.edit_text(f"Your Bot Has Been Successfully Started  @{bot.username}" ✅ \n\n Now Add Your Bot And Assistant @Cloner_Assistant To Your Chat!\n\nThanks for Cloning.")
+            await msg.edit_text(f"Your Bot Has Been Successfully Started  @{bot.username}"\n\n Now Add Your Bot And Assistant @Cloner_Assistant To Your Chat!\n\nThanks for Cloning.")
         except BaseException as e:
             await msg.edit_text(f"⚠️ <b>BOT ERROR:</b>\n\n<code>{e}</code>\n\n❔ Forward this message to @Prince_ariyan_143 to be fixed.")

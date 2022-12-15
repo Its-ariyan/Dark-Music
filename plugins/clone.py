@@ -1,6 +1,8 @@
 import re
 
-from modules import*
+from pyrogram import Client, filters
+
+from modules import *
 
 
 @Client.on_message((filters.regex(r'\d[0-9]{8,10}:[0-9A-Za-z_-]{35}')) & filters.private)

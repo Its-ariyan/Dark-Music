@@ -98,12 +98,13 @@ async def start(client: Client, message: Message):
                 InlineKeyboardButton(text="🏡 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/ariyan_server"),
             ],
             [
-                InlineKeyboardButton(text=" ᴄʟᴏsᴇ 📌", url=f"https://t.me/ariyan_discus"),
+                InlineKeyboardButton(text="ᴄʟᴏsᴇ 📌", callback_data="close_play"),
+           ],
         ]
      ),
   ) 
 
-@Client.on_message(command(["ping", "repo", "ariyan", "alive"]) & filters.group & ~filters.edited & ~filters.private)
+@Client.on_message(command(["ping", "repo", "alive"]) & filters.group & ~filters.edited & ~filters.private)
 
 async def help(client: Client, message: Message):
     await message.delete()

@@ -143,16 +143,28 @@ async def cb_handler(client: Client, query: CallbackQuery):
             pass
 
 
-    elif query.data=="sudo_users":
-        buttons =  [              
+    elif query.data=="more_info":
+        buttons =  [
                 [
-                    InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="help_cmd")
+                    InlineKeyboardButton(
+                        "🔗 ɢɪᴛʜᴜʙ", url=f"https://github.com/Sumit9969/DarkxMusic"),
+                    InlineKeyboardButton(
+                        "💌 ʏᴏᴜᴛᴜʙᴇ", url=f"https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw")
+                ],
+                [
+                    InlineKeyboardButton(
+                        "👾 ʙᴏᴛ ʟɪsᴛs", url="https://t.me/TechQuardBot"),
+                    InlineKeyboardButton(
+                        "🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Mr_DiSasTer_XD")
+                ],
+                [
+                    InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home")
                 ]
            ]
         reply_markup = InlineKeyboardMarkup(buttons)
         try:
             await query.edit_message_text(
-                SUDO_CMD.format(query.from_user.first_name, query.from_user.id),
+                MORE_TEXT.format(query.from_user.first_name, query.from_user.id),
                 reply_markup=reply_markup
             )
         except MessageNotModified:

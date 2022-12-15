@@ -6,8 +6,8 @@ import yt_dlp
 
 from pyrogram import filters, Client
 from youtube_search import YoutubeSearch
-from config import BOT_NAME as bn, BOT_USERNAME as bu, SUPPORT_GROUP, CHANNEL_UPDATES
-from config import SESSION_NAME
+from modules.config import BOT_NAME as bn, BOT_USERNAME as bu, SUPPORT_GROUP, CHANNEL_UPDATES
+from modules.config import SESSION_NAME
 
 def time_to_seconds(time):
     stringt = str(time)

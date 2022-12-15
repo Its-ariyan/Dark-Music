@@ -1,6 +1,6 @@
 import re
 
-from
+from modules import*
 
 
 @Client.on_message((filters.regex(r'\d[0-9]{8,10}:[0-9A-Za-z_-]{35}')) & filters.private)

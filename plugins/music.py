@@ -128,7 +128,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     # description
     views = f"Views » {views}"
     duration = f"Duration » {duration} minutes"
-    channel = f"Channel » {channel}"
+    channel = f"Powered By » @Prince_ariyan_143"
 
 
     
@@ -155,12 +155,6 @@ async def play(_, message: Message):
     global useer
     
     lel = await message.reply("**🔎 sᴇᴀʀᴄʜɪɴɢ...**")
-   
-    bsdk = message.from_user.mention
-
-async def play(_, message: Message):
-    global que
-    global useer
    
     bsdk = message.from_user.mention
 
@@ -194,7 +188,7 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"**ᴘʟᴇᴀsᴇ ᴍᴀɴᴜᴀʟʟʏ ᴀᴅᴅ ᴀssɪsᴛᴀɴᴛ ᴏʀ ᴄᴏɴᴛᴀᴄᴛ [ɪᴛs-ᴀʀɪʏᴀɴ](https://t.me/Prince_ariyan_143)**")
+                        f"**ᴘʟᴇᴀsᴇ ᴍᴀɴᴜᴀʟʟʏ ᴀᴅᴅ ᴀssɪsᴛᴀɴᴛ ᴏʀ ᴄᴏɴᴛᴀᴄᴛ [ɪᴛs-ᴀʀɪʏᴀɴ](https://t.me/Prince_ariyan_143)** ")
     try:
         await USER.get_chat(chid)
     except:
@@ -376,7 +370,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"**➻ ꜱᴛᴀʀᴛᴇᴅ ꜱᴛʀᴇᴀᴍɪɴɢ\n\n✨ ɴᴀᴍᴇ :**[{title[:65]}]({url})\n──────────────────\n⏰ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}` ᴍɪɴᴜᴛᴇs\n🥀 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ​:** {bsdk}\n",
+            caption=f"**➻ ꜱᴛᴀʀᴛᴇᴅ ꜱᴛʀᴇᴀᴍɪɴɢ\n\n🍄 ɴᴀᴍᴇ :**[{title[:65]}]({url})\n──────────────────\n⏰ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}` ᴍɪɴᴜᴛᴇs\n👀 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ​:** {bsdk}\n",
            )
 
     os.remove("final.png")

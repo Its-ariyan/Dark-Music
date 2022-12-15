@@ -95,7 +95,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton(
                         "🏡 ʙᴏᴛ ᴏᴡɴᴇʀ", url="https://t.me/{OWNER_USERNAME}"),
                     InlineKeyboardButton(
-                        "❄️ ᴍᴏʀᴇ ɪɴғᴏ", callback_data="more_info")
+                        "🔹 sᴏᴜʀᴄᴇ", callback_data="more_info")
                 ],
                 [
                     InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home")
@@ -110,6 +110,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except MessageNotModified:
             pass
 
+
+    elif query.data=="more_info":
+        buttons =  [
+                [
+                    InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home")
+                ]
+           ]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        try:
+            await query.edit_message_text(
+                MORE_TEXT.format(query.from_user.first_name, query.from_user.id),
+                reply_markup=reply_markup
+            )
+        except MessageNotModified:
+            pass  
 
 
     elif query.data=="users_cmd":

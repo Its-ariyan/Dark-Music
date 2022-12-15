@@ -13,8 +13,8 @@ HOME_TEXT = """
 ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ [ɪᴛs-ᴀʀɪʏᴀɴ](https://t.me/Prince_ariyan_143)...
 ━━━━━━━━━━━━━━━━━━━**"""
 
-SUDO_USERS = """
-🥀 sᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅs 
+SUDO_X = """
+sᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅs 
 ๏ /gcast : ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
 ๏ /eval or /sh : ʀᴜɴs ᴛʜᴇ ɢɪᴠᴇɴ ᴄᴏᴅᴇ ᴏɴ ᴛʜᴇ ʙᴏᴛ's ᴛᴇʀᴍɪɴᴀʟ.
 ๏ /rmw : ᴄʟᴇᴀʀs ᴀʟʟ ᴛʜᴇ ᴄᴀᴄʜᴇ ᴩʜᴏᴛᴏs ᴏɴ ᴛʜᴇ ʙᴏᴛ's sᴇʀᴠᴇʀ.
@@ -152,7 +152,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         try:
             await query.edit_message_text(
-                SUDO_USERS.format(query.from_user.first_name, query.from_user.id),
+                SUDO_X.format(query.from_user.first_name, query.from_user.id),
                 reply_markup=reply_markup
             )
         except MessageNotModified:

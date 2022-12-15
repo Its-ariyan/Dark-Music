@@ -29,7 +29,13 @@ DARK_IMG = (
 
 )
 
-
+HOME_X = """
+━━━━━━━━━━━━━━━━━
+ʜᴇʟʟᴏ {}, 🥀 ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴀɴᴅ ɴᴇxᴛ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴠᴄ ᴘʟᴀʏᴇʀ
+ʙᴏᴛ ᴀɴᴅ ɴᴏ ʟᴀɢ ɪssᴜᴇ ᴡɪᴛʜ ʙᴇsᴛ sᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs
+ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
+ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ [ᴀʀɪʏᴀɴ-xᴅ](https://t.me/Prince_ariyan_143)...\n━━━━━━━━━━━━━━━━━━━**
+"""
 
 
 START_TIME = datetime.utcnow()
@@ -59,12 +65,7 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         random.choice(DARK_IMG),
-        caption=f"""**━━━━━━━━━━━━━━━━━
-ʜᴇʟʟᴏ {}, 🥀 ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴀɴᴅ ɴᴇxᴛ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴠᴄ ᴘʟᴀʏᴇʀ
-ʙᴏᴛ ᴀɴᴅ ɴᴏ ʟᴀɢ ɪssᴜᴇ ᴡɪᴛʜ ʙᴇsᴛ sᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs
-ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
-ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ [ᴀʀɪʏᴀɴ-xᴅ](https://t.me/Prince_ariyan_143)...\n━━━━━━━━━━━━━━━━━━━**
-""",
+await message.reply_text(f"{HOME_X}"
     reply_markup=InlineKeyboardMarkup(
     [
         [

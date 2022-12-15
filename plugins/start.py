@@ -67,8 +67,9 @@ async def _human_time_duration(seconds):
 
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
-    await message.reply_photo("{DARK_IMG}"),
-        caption=(f"{HELP_TEXT}".format(message.from_user.mention()),
+    await message.reply_photo(
+        random.choice(DARK_IMG),
+        caption=(f"{HELP_TEXT}"),
     reply_markup=InlineKeyboardMarkup(
     [
         [

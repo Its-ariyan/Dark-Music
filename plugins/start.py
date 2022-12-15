@@ -69,7 +69,7 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         random.choice(DARK_IMG),
-        caption=f(PM_START_TEXT.format(event.sender.first_name),
+        caption=f({PM_START_TEXT}.format(event.sender.first_name),
     reply_markup=InlineKeyboardMarkup(
     [
         [

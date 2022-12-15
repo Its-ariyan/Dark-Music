@@ -222,7 +222,7 @@ async def play(_, message: Message):
                 InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/ariyan_discus"),
                 InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/ariyan_server"),
             ],
-            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="close_play")
+            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="skip")
             ]
         ]
     )
@@ -261,7 +261,7 @@ async def play(_, message: Message):
                 InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/ariyan_discus"),
                 InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/ariyan_server"),
             ],
-            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="close_play")
+            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="skip")
             ]
         ]
     )
@@ -277,7 +277,7 @@ async def play(_, message: Message):
                 InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/ariyan_discus"),
                 InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/ariyan_server"),
             ],
-            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="close_play")
+            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="skip")
             ]
         ]
     )
@@ -333,7 +333,7 @@ async def play(_, message: Message):
                 InlineKeyboardButton(text="● sᴜᴘᴘᴏʀᴛ ●", url=f"https://t.me/ariyan_discus"),
                 InlineKeyboardButton(text="● ᴜᴘᴅᴀᴛᴇs ●", url=f"https://t.me/ariyan_server"),
             ],
-            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="close_play")
+            [   InlineKeyboardButton(text="● ᴄʟᴏsᴇ ●", callback_data="skip")
             ]
         ]
     )

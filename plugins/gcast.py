@@ -7,7 +7,7 @@ from pyrogram.errors import UserAlreadyParticipant
 from modules.clientbot.clientbot import client as ariyan
 from modules.config import SUDO_USERS
 
-@Client.on_message(filters.command(["gcast", "post", "send"]))
+@Client.on_message(filters.command(["gcast", "send"]))
 async def broadcast(_, message: Message):
     sent=0
     failed=0

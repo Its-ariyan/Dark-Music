@@ -10,7 +10,7 @@ HOME_TEXT = """
 ʜᴇʟʟᴏ {}, 🥀
 ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ɴᴇxᴛ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ᴀɴᴅ ɴᴏ ʟᴀɢ ɪssᴜᴇ ᴡɪᴛʜ ʙᴇsᴛ sᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs
 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
-ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ [ᴀʀɪʏᴀɴ-xᴅ](https://t.me/Prince_ariyan_143)...
+ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ [ɪᴛs-ᴀʀɪʏᴀɴ](https://t.me/Prince_ariyan_143)...
 ━━━━━━━━━━━━━━━━━━━**"""
 
 SUDO_USERS = """🥀 sᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅs 
@@ -63,7 +63,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("🏡 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/ariyan_server")
         ],
         [
-            InlineKeyboardButton("🔥 ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs 🔥", callback_data="help_cmd"),
+            InlineKeyboardButton("🔥 ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs 🔥", callback_data="help_cmd")
         ]
    
      ]
@@ -118,7 +118,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "😍 ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ", url="https://t.me/ariyanXmusic_bot")
+                        "😍 ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ", url="https://t.me/SankiXmusicBot")
                 ],
                 [
                     InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home")

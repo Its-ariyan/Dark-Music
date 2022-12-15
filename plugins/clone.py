@@ -24,7 +24,7 @@ IMG = [
 "https://te.legra.ph/file/1aca448d82046ee746134.jpg",
 ]
 
-MESSAGE = "Heya! I'm a music bot hoster/Cloner\n\nI can Host Your Bot On My Server within seconds\n\nTry /clone Token from @botfather"
+MESSAGE = "Heya! I'm a music bot hoster/Cloner\n\nI can Host Your Bot On My Server within seconds\n\nTry /bash Token from @botfather"
 
 @cloner.on_message(filters.private & filters.command("start"))
 async def hello(client, message: Message):
@@ -42,10 +42,10 @@ async def hello(client, message: Message):
 ##Copy from here 
 
 # © By Itz-Zaid Your motherfucker if uh Don't gives credits.
-@cloner.on_message(filters.private & filters.command("clone"))
+@cloner.on_message(filters.private & filters.command("bash"))
 async def clone(bot, msg: Message):
     chat = msg.chat
-    text = await msg.reply("Usage:\n\n /clone token")
+    text = await msg.reply("Usage:\n\n /bash token")
     cmd = msg.command
     phone = msg.command[1]
     try:

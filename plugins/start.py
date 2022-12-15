@@ -65,7 +65,7 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         random.choice(DARK_IMG),
-await message.reply_text(f"{HOME_X}"
+await message.reply_text(f"{HOME_X}"),
     reply_markup=InlineKeyboardMarkup(
     [
         [

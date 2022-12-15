@@ -5,7 +5,7 @@ import time
 from pyrogram import *
 from pyrogram.types import *
 from random import choice
-from modules import cloner, ASSUSERNAME, BOT_NAME
+from modules.config import CLONER_TOKEN, ASSUSERNAME, BOT_NAME
 from modules.config import API_ID, API_HASH
 IMG = [
 "https://te.legra.ph/file/60cd65b55a610aa57e3b6.jpg",

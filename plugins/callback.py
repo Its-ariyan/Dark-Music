@@ -3,7 +3,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 from pyrogram import Client
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
-from modules.config import BOT_USERNAME
+from modules.config import BOT_USERNAME, OWNER_ID
 from pyrogram.errors import MessageNotModified
 
 HOME_TEXT = """
@@ -14,7 +14,7 @@ HOME_TEXT = """
 ━━━━━━━━━━━━━━━━━━━**"""
 
 SUDO_X = """
-sᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅs 
+🥀 sᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅs 
 ๏ /gcast : ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
 ๏ /eval or /sh : ʀᴜɴs ᴛʜᴇ ɢɪᴠᴇɴ ᴄᴏᴅᴇ ᴏɴ ᴛʜᴇ ʙᴏᴛ's ᴛᴇʀᴍɪɴᴀʟ.
 ๏ /rmw : ᴄʟᴇᴀʀs ᴀʟʟ ᴛʜᴇ ᴄᴀᴄʜᴇ ᴩʜᴏᴛᴏs ᴏɴ ᴛʜᴇ ʙᴏᴛ's sᴇʀᴠᴇʀ.
@@ -93,9 +93,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🏡 ʙᴏᴛ ᴏᴡɴᴇʀ", url="https://t.me/{OWNER_USERNAME}"),
+                        "🏡 ʙᴏᴛ ᴏᴡɴᴇʀ", url=f"tg://user?id={OWNER_ID}"),
                     InlineKeyboardButton(
-                        "🔹 sᴏᴜʀᴄᴇ", callback_data="more_info")
+                        "🔹 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", callback_data="more_info")
                 ],
                 [
                     InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home")

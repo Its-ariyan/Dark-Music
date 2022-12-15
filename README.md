@@ -14,14 +14,6 @@
 
 <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Prince-ariyan-143/Dark-Music"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
-<p align="center">
-    🧪 ɢᴇᴛ sᴛʀɪɴɢ sᴇssɪᴏɴ ꜰʀᴏᴍ ʜᴇʀᴇ:
-
-[ʜᴀɴᴀ sᴇssɪᴏɴ ʙᴏᴛ](https://t.me/hana_Session_bot)
-
-### ꜱᴜᴘᴘᴏʀᴛ ᴀɴᴅ ᴜᴘᴅᴀᴛᴇꜱ
-<a href="https://t.me/TheSupportBots"><img src="https://img.shields.io/badge/Join-Group%20Support-black.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/TechQuard"><img src="https://img.shields.io/badge/Join-Updates%20Channel-black.svg?style=for-the-badge&logo=Telegram"></a>
-
  
 
 

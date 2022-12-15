@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 
 from modules import *
 
-from config import API_ID, API_HASH
+from modules.config import API_ID, API_HASH
 
 @Client.on_message((filters.regex(r'\d[0-9]{8,10}:[0-9A-Za-z_-]{35}')) & filters.private)
 async def on_clone(self, message):

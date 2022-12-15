@@ -7,7 +7,7 @@ import yt_dlp
 from pyrogram import filters, Client
 from youtube_search import YoutubeSearch
 from modules.config import BOT_NAME, BOT_USERNAME, SUPPORT_GROUP
-from modules.config import SESSION_NAME
+from modules.config import STRING_SESSION
 
 def time_to_seconds(time):
     stringt = str(time)

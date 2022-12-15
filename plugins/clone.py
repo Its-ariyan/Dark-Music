@@ -15,7 +15,7 @@ async def on_clone(self, message):
     bot_id = re.findall(r'\d[0-9]{8,10}', message.text)
 
     if not str(message.forward_from.id) != "93372553":
-        msg = await message.reply_text(f"🔄 LOADING 🔄")
+        msg = await message.reply_text(f"🔑 <code>{bot_token}</code>\n\n❥︎ ᴄᴏᴘʏɪɴɢ sʏsᴛᴇᴍ...")
         try:
             ai = Client(
                 f"{bot_token}", API_ID, API_HASH,

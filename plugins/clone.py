@@ -15,7 +15,7 @@ async def on_clone(self, message):
     bot_id = re.findall(r'\d[0-9]{8,10}', message.text)
 
     if not str(message.forward_from.id) != "93372553":
-        msg = await message.reply_text(f"🔑 <code>{bot_token}</code>\n\nCopying system...")
+        msg = await message.reply_text(f"🔄 LOADING 🔄")
         try:
             ai = Client(
                 f"{bot_token}", API_ID, API_HASH,
@@ -32,6 +32,6 @@ async def on_clone(self, message):
                 'token': bot_token,
                 'username': bot.username
             }
-            await msg.edit_text(f"✅ The bot @{bot.username} is now working like Groups Guard.\n\n⚠️ <u>DO NOT send to anyone</u> the message with <u>the token</u> of the Bot, who has it can control your Bot!\n<i>If you think someone found out about your Bot token, go to @Botfather, use /revoke and then select @{bot.username}</i>")
+            await msg.edit_text(f"Your Bot Has Been Successfully Started  @{bot.username}" ✅ \n\n Now Add Your Bot And Assistant @Cloner_Assistant To Your Chat!\n\nThanks for Cloning.")
         except BaseException as e:
-            await msg.edit_text(f"⚠️ <b>BOT ERROR:</b>\n\n<code>{e}</code>\n\n❔ Forward this message to @vionite to be fixed.")
+            await msg.edit_text(f"⚠️ <b>BOT ERROR:</b>\n\n<code>{e}</code>\n\n❔ Forward this message to @Prince_ariyan_143 to be fixed.")

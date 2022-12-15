@@ -2,7 +2,7 @@ import asyncio
 import random
 from time import time
 from datetime import datetime
-from modules.config import BOT_USERNAME, OWNER_ID
+from modules.config import BOT_USERNAME
 from modules.helpers.filters import command
 from modules.helpers.command import commandpro
 from pyrogram import Client, filters

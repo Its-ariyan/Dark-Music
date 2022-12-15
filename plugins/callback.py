@@ -13,13 +13,13 @@ HOME_TEXT = """
 ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ [ɪᴛs-ᴀʀɪʏᴀɴ](https://t.me/Prince_ariyan_143)...
 ━━━━━━━━━━━━━━━━━━━**"""
 
-SUDO_USERS = """🥀 sᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅs 
+SUDO_USERS = """
+🥀 sᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅs 
 ๏ /gcast : ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
 ๏ /eval or /sh : ʀᴜɴs ᴛʜᴇ ɢɪᴠᴇɴ ᴄᴏᴅᴇ ᴏɴ ᴛʜᴇ ʙᴏᴛ's ᴛᴇʀᴍɪɴᴀʟ.
 ๏ /rmw : ᴄʟᴇᴀʀs ᴀʟʟ ᴛʜᴇ ᴄᴀᴄʜᴇ ᴩʜᴏᴛᴏs ᴏɴ ᴛʜᴇ ʙᴏᴛ's sᴇʀᴠᴇʀ.
 ๏ /rmp : ᴄʟᴇᴀʀs ᴛʜᴇ ʀᴀᴡ ғɪʟᴇs ᴏғ ᴛʜᴇ ʙᴏᴛ.
 ๏ /rmd : ᴄʟᴇᴀʀs ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ғɪʟᴇs ᴏɴ ᴛʜᴇ ʙᴏᴛ's sᴇʀᴠᴇʀ.""",
-
 """
 
 
@@ -87,7 +87,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
                 [
                     InlineKeyboardButton(
-                        "🥀 sᴜᴅᴏ ᴄᴍᴅ ", callback_data="sudo_users"),
+                        "🥀 sᴜᴅᴏ ᴄᴍᴅ ", callback_data="sudo_info"),
                     InlineKeyboardButton(
                         "🍃 ᴜsᴇʀs ᴄᴍᴅ", callback_data="users_cmd"),
                 ],
@@ -143,20 +143,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             pass
 
 
-    elif query.data=="more_info":
+    elif query.data=="sudo_info":
         buttons =  [
-                [
-                    InlineKeyboardButton(
-                        "🔗 ɢɪᴛʜᴜʙ", url=f"https://github.com/Sumit9969/DarkxMusic"),
-                    InlineKeyboardButton(
-                        "💌 ʏᴏᴜᴛᴜʙᴇ", url=f"https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw")
-                ],
-                [
-                    InlineKeyboardButton(
-                        "👾 ʙᴏᴛ ʟɪsᴛs", url="https://t.me/TechQuardBot"),
-                    InlineKeyboardButton(
-                        "🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Mr_DiSasTer_XD")
-                ],
                 [
                     InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home")
                 ]
@@ -164,7 +152,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         try:
             await query.edit_message_text(
-                MORE_TEXT.format(query.from_user.first_name, query.from_user.id),
+                SUDO_USERS.format(query.from_user.first_name, query.from_user.id),
                 reply_markup=reply_markup
             )
         except MessageNotModified:

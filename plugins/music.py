@@ -295,7 +295,7 @@ async def play(_, message: Message):
                      caption="💌 **ᴜsᴀɢᴇ: /play ɢɪᴠᴇ ᴀ ᴛɪᴛʟᴇ sᴏɴɢ ᴛᴏ ᴘʟᴀʏ ᴍᴜsɪᴄ**"
                     
             )
-        await lel.edit("🔎")
+        await lel.edit("**⇆ ᴘʀᴏᴄᴇssɪɴɢ.**")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:

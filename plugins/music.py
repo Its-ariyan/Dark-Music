@@ -144,7 +144,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 
 
 @Client.on_message(
-    commandpro(["/play", "/yt", "play"])
+    commandpro(["/play", "play"])
     & filters.group
     & ~filters.edited
     & ~filters.forwarded
@@ -377,7 +377,7 @@ async def play(_, message: Message):
     return await lel.delete()
     
     
-@Client.on_message(commandpro(["/pause", ".pause"]) & other_filters)
+@Client.on_message(commandpro(["/pause", "pause"]) & other_filters)
 @errors
 @authorized_users_only
 async def pause(_, message: Message):
@@ -396,7 +396,7 @@ async def resume(_, message: Message):
 
 
 
-@Client.on_message(commandpro(["/skip", "/next"]) & other_filters)
+@Client.on_message(commandpro(["/skip", "/next", "skip"]) & other_filters)
 @errors
 @authorized_users_only
 async def skip(_, message: Message):
@@ -427,7 +427,7 @@ async def skip(_, message: Message):
    ) 
 
 
-@Client.on_message(commandpro(["/end", "/stop"]) & other_filters)
+@Client.on_message(commandpro(["/end", "end", "/stop", "stop"]) & other_filters)
 @errors
 @authorized_users_only
 async def stop(_, message: Message):

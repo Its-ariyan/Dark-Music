@@ -16,9 +16,9 @@ from pyrogram.types import (
     InputMediaPhoto,
     Message,
 )
-from Heroku import BOT_NAME, BOT_USERNAME
-from Heroku.config import BOT_NAME
-from Heroku.config import IMG_1
+from modules import BOT_NAME, BOT_USERNAME
+from modules.config import BOT_NAME
+from modules.config import IMG_1
 
 import psutil
 from pyrogram import Client
@@ -27,11 +27,11 @@ from pyrogram import filters
 from pyrogram.types import Message
 from pytgcalls import __version__ as pytover
 
-from Heroku import (BOT_ID, BOT_NAME, SUDO_USERS, boottime)
-from Heroku.calls.calls import client as userbot
-from Heroku.core.chats import get_served_chats
-from Heroku.core.sudo import get_sudoers
-from Heroku.core.ping import get_readable_time
+from modules import (BOT_ID, BOT_NAME, SUDO_USERS, boottime)
+from modules.calls.calls import client as userbot
+from modules.core.chats import get_served_chats
+from modules.core.sudo import get_sudoers
+from modules.core.ping import get_readable_time
 
 def dashmarkup():
     buttons = [

@@ -101,7 +101,7 @@ async def start_(client: Client, message: Message):
 )
     
     
-@Client.on_message(commandpro(["/start", "/alive", "/repo"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["/start", "/alive", "/repo"]) & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
         random.choice(DARK_IMG),

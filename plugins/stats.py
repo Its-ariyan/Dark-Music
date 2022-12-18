@@ -16,7 +16,7 @@ from pyrogram.types import (
     InputMediaPhoto,
     Message,
 )
-from modules import BOT_NAME, BOT_USERNAME
+from modules.config import BOT_NAME, BOT_USERNAME
 from modules.config import BOT_NAME
 from modules.config import IMG_1
 

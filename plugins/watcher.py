@@ -5,7 +5,7 @@ from pyrogram.errors import FloodWait
 
 
 from modules.config import SUDO_USERS
-from modules.setup.filters import command
+from modules.helpers.filters import command
 from modules.calls.calls import client as USER
 from modules.core.chats import add_served_chat, blacklisted_chats, get_served_chats
 

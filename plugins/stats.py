@@ -27,7 +27,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 from pytgcalls import __version__ as pytover
 
-from modules.config import (BOT_ID, BOT_NAME, SUDO_USERS, boottime)
+from modules.config import BOT_ID, BOT_NAME, SUDO_USERS, boottime
 from modules.calls.calls import client as userbot
 from modules.core.chats import get_served_chats
 from modules.core.sudo import get_sudoers
